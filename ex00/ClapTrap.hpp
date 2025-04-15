@@ -24,7 +24,8 @@ class ClapTrap
 		int EnergyPoints;
 		int AttackDamage;
 	public:
-		ClapTrap(std::string name);//Default constructor
+		ClapTrap();//Default constructor
+		ClapTrap(std::string name);//constructor
 		ClapTrap(const ClapTrap &other);//Copy constructor
 		ClapTrap &operator=(const ClapTrap &other);//Copy assignment operator
 		~ClapTrap();//Destructor
