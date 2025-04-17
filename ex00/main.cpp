@@ -14,7 +14,22 @@
 
 int main()
 {
-	ClapTrap obj = ClapTrap("Foo");
+	std::cout << "====Orthodox Canonical Form=====" <<std::endl;
+	ClapTrap a;
+	ClapTrap b(a);
+	ClapTrap c;
+
+	c = b;
+	std::cout << "====ClapTrap====" << std::endl;
+	ClapTrap obj("Foo");
 	// obj.attack("b");
-	obj.takeDamage(2);
+	// obj.takeDamage(3);
+	// obj.beRepaired(2);
+
+	for(int i = 0; i < 10; i++)//burn energy
+	{
+		obj.attack("burn");
+	}
+
+	obj.attack("noleft");//no energy left
 }

@@ -20,7 +20,7 @@ class ClapTrap
 {
 	private:
 		std::string Name;
-		int HitPoints;//representing the health of the ClapTrap
+		unsigned int HitPoints;//representing the health of the ClapTrap
 		int EnergyPoints;
 		int AttackDamage;
 	public:
