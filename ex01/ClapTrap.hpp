@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:15:42 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/18 16:31:01 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/21 14:16:03 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class ClapTrap
 		int AttackDamage;
 	public:
 		ClapTrap();//Default constructor
-		ClapTrap(std::string name);//constructor
+		ClapTrap(std::string name);//Parameter constructor
 		ClapTrap(const ClapTrap &other);//Copy constructor
 		ClapTrap &operator=(const ClapTrap &other);//Copy assignment operator
 		~ClapTrap();//Destructor
