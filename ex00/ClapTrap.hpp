@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:15:42 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/15 13:41:49 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/21 16:50:48 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class ClapTrap
 {
 	private:
-		std::string Name;
+		std::string Name_;
 		unsigned int HitPoints;//representing the health of the ClapTrap
 		int EnergyPoints;
 		int AttackDamage;

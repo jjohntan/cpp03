@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 13:46:19 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/15 13:48:28 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/21 16:52:28 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main()
 	//
 	// c = b;
 	std::cout << std::endl << "========== ClapTrap ============" << std::endl;
-	ClapTrap obj("Foo");
+	ClapTrap obj("a");
 	obj.attack("b");
 	obj.takeDamage(3);
 	obj.beRepaired(2);
