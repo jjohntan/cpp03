@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:13:50 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/21 16:54:19 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/22 16:48:43 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ ClapTrap::ClapTrap(std::string name): Name_(name), HitPoints(10)
 , EnergyPoints(10), AttackDamage(0)//constructor
 {
 	std::cout << "ClapTrap Constructor called" << std::endl;
-	std::cout << Name_ << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other)//Copy constructor

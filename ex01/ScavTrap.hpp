@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:08:57 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/21 14:18:36 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/22 17:05:33 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ class ScavTrap: public ClapTrap
 		ScavTrap &operator=(const ScavTrap &other);//Copy assignment operator
 		~ScavTrap();//Destructor
 		void guardGate();
+		std::string getter_name(void);
+		int getter_hp(void);//
+		int getter_ep(void);//
+		int getter_ad(void);//
 };
 
 #endif
