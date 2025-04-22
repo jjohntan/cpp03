@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 13:46:19 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/21 21:57:56 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/22 17:46:39 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,14 @@
 
 int main()
 {
-	ScavTrap a("John");
+	// ClapTrap a;
+	// ClapTrap b( a );
+	// ClapTrap c;
+	// c = b;
+	
+	ScavTrap a("Foo");
+	ScavTrap b(a);
+	ScavTrap c;
+	c = b;
+	a.guardGate();
 }
