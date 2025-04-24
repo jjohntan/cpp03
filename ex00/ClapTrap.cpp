@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:13:50 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/21 16:52:07 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/24 17:41:23 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ ClapTrap::ClapTrap()//Default constructor
 ClapTrap::ClapTrap(std::string name): Name_(name), HitPoints(10)
 , EnergyPoints(10), AttackDamage(0)//constructor
 {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Parameter constructor called" << std::endl;	
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other)//Copy constructor
@@ -60,18 +60,31 @@ void ClapTrap::attack(const std::string& target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-	std::cout << "takeDamage called " << HitPoints << std::endl;
-
-	HitPoints = amount;
+	
+	if (HitPoints >= amount)
+	{
+		HitPoints -= amount;
+		std::cout << "ClapTrap " << Name_ << " takes " << amount << " points of damage!" << std::endl;//
+	}
+	else
+	{
+		HitPoints = 0;
+		std::cout << "ClapTrap " << Name_ << " can’t do anything if it has no hit points or energy points left!" << std::endl;
+	}
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	std::cout << "beRepaired called " << HitPoints << std::endl;
 		
 	if (EnergyPoints > 0 && HitPoints > 0)
 	{
 		EnergyPoints -= 1;
-		HitPoints = amount;
+		HitPoints += amount;
+		std::cout << "ClapTrap " << Name_ << " repairs itself, it regains " << amount << " hit points!" << std::endl;
 	}
 }
+//getter function
+// std::string ClapTrap::getName( void ) const { return this->Name_; }
+// int ClapTrap::getHitPoints( void ) const { return this->HitPoints; }
+// int ClapTrap::getEnergyPoints( void ) const { return this->EnergyPoints; }
+// int ClapTrap::getAttackDamage( void ) const { return this->AttackDamage; }
