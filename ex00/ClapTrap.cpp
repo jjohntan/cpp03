@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:13:50 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 17:41:23 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/24 18:08:04 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 		std::cout << "ClapTrap " << Name_ << " repairs itself, it regains " << amount << " hit points!" << std::endl;
 	}
 }
+
 //getter function
 // std::string ClapTrap::getName( void ) const { return this->Name_; }
 // int ClapTrap::getHitPoints( void ) const { return this->HitPoints; }
