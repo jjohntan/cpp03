@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 13:46:19 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 18:10:08 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/25 17:06:27 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,18 @@
 
 int main()
 {
-	// std::cout << "===== Orthodox Canonical Form ======" << std::endl;
-	// FragTrap a("plant");
-	// FragTrap b(a);
-	// FragTrap c;
+	std::cout << "===== Orthodox Canonical Form ======" << std::endl;
+	ClapTrap DC;
+	ClapTrap PC("plant");
+	ClapTrap CC(PC);
+	ClapTrap CAO;
 	
-	// c = b;
+	CAO = CC;
 	
-	// std::cout << b.getName() << std::endl;
-	// std::cout << b.getHitPoints() << std::endl;
-	// std::cout << b.getEnergyPoints() << std::endl;
-	// std::cout << b.getAttackDamage() << std::endl;
+	std::cout << CC.getName() << std::endl;
+	std::cout << CC.getHitPoints() << std::endl;
+	std::cout << CC.getEnergyPoints() << std::endl;
+	std::cout << CC.getAttackDamage() << std::endl;	
 	std::cout << "========== ClapTrap ============" << std::endl;
 	FragTrap a("plant");
 	a.attack("zombie");

@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 18:01:00 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 18:19:03 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/25 17:00:37 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 FragTrap::FragTrap(): ClapTrap()
 {
 	std::cout << "FragTrap Default constructor called" << std::endl;
+	HitPoints = 100;
+	EnergyPoints = 100;
+	AttackDamage = 30;
 }
 
 FragTrap::FragTrap(std::string name): ClapTrap(name)

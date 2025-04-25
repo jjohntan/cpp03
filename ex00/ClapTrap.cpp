@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:13:50 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/25 17:03:53 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/25 17:54:30 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,6 @@ void ClapTrap::takeDamage(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-		
 	if (EnergyPoints > 0 && HitPoints > 0)
 	{
 		EnergyPoints -= 1;
