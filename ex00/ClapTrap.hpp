@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:15:42 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/25 17:12:01 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/25 19:56:27 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,5 @@ class ClapTrap
 		// int getEnergyPoints( void ) const;
 		// int getAttackDamage( void ) const;
 };
-
-
 
 #endif
