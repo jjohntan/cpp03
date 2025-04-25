@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:15:42 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 17:39:13 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/25 17:12:01 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ class ClapTrap
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 		//getter function
-		// std::string getName( void ) const;//debug
-		// int getHitPoints( void ) const;//debug
-		// int getEnergyPoints( void ) const;//debug
-		// int getAttackDamage( void ) const;//debug
+		// std::string getName( void ) const;
+		// int getHitPoints( void ) const;
+		// int getEnergyPoints( void ) const;
+		// int getAttackDamage( void ) const;
 };
 
 

@@ -6,13 +6,14 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 19:13:50 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 18:08:04 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/25 17:03:53 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap()//Default constructor
+ClapTrap::ClapTrap():Name_("Default"), HitPoints(10)
+, EnergyPoints(10), AttackDamage(0)//Default constructor
 {
 	std::cout << "Default constructor called" << std::endl;
 }
@@ -85,7 +86,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 }
 
 //getter function
-// std::string ClapTrap::getName( void ) const { return this->Name_; }
-// int ClapTrap::getHitPoints( void ) const { return this->HitPoints; }
-// int ClapTrap::getEnergyPoints( void ) const { return this->EnergyPoints; }
-// int ClapTrap::getAttackDamage( void ) const { return this->AttackDamage; }
+std::string ClapTrap::getName( void ) const { return this->Name_; }
+int ClapTrap::getHitPoints( void ) const { return this->HitPoints; }
+int ClapTrap::getEnergyPoints( void ) const { return this->EnergyPoints; }
+int ClapTrap::getAttackDamage( void ) const { return this->AttackDamage; }
