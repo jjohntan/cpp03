@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:08:57 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/25 17:44:05 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/26 16:07:33 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,6 @@ class ScavTrap: public ClapTrap
 		~ScavTrap();//Destructor
 		void attack(const std::string& target);
 		void guardGate();
-		std::string getter_name(void);
-		int getter_hp(void);//
-		int getter_ep(void);//
-		int getter_ad(void);//
 };
 
 #endif
